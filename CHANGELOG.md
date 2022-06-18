@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.9...v0.0.10) (2022-06-18)
+
+
+### Bug Fixes
+
+* name ([59b220f](https://github.com/rzhAvenir/taro-vue3-template/commit/59b220f02742ec0953614f7a6e0dd7bc6cd9fe9b))
+
 ### [0.0.9](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.8...v0.0.9) (2022-06-18)
 
 

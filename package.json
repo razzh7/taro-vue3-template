@@ -29,7 +29,7 @@
     "dev:quickapp": "npm run build:quickapp -- --watch",
     "tsc": "vue-tsc --noEmit --skipLibCheck",
     "lint": "eslint --ext .vue --ext .js --ext .ts src/",
-    "prepare": "husy install"
+    "prepare": "husky install"
   },
   "browserslist": [
     "last 3 versions",
@@ -47,6 +47,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@tarojs/mini-runner": "3.4.12",
     "@tarojs/webpack-runner": "3.4.12",
     "@types/webpack-env": "^1.13.6",
@@ -56,6 +58,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
     "babel-preset-taro": "3.4.12",
+    "commitlint": "^17.0.2",
     "eslint": "^8.12.0",
     "eslint-config-taro": "3.4.12",
     "eslint-plugin-prettier": "^4.0.0",

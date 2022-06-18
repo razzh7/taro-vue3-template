@@ -1,6 +1,6 @@
 {
   "name": "myApp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "description": "demo",
   "templateInfo": {
@@ -31,7 +31,8 @@
     "lint": "eslint --ext .vue --ext .js --ext .ts src/",
     "prepare": "husky install",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "release": "standard-version"
+    "release": "standard-version",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "browserslist": [
     "last 3 versions",

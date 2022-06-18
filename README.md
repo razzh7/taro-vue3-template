@@ -1,6 +1,6 @@
 # 从零开始搭建 Taro + Vue3 多端编译环境
 
-## 搭建项目架构
+## 一、搭建项目架构
 
 #### 初始化项目
 
@@ -32,3 +32,18 @@ yarn dev:weapp
 在命令中添加`production`就可以开启生产环境的压缩模式，taro-cli 搭建的初始代码经过压缩后为 267KB
 
 ![img](/ScreenShots/analyse.png)
+
+## 二、设置代码规范的 Eslint Prettier
+
+- 代码规范 ESlint
+- 代码格式化 Prettier    
+#### 1、安装依赖
+
+```shell
+yarn add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin-prettier prettier -D
+```
+#### 2、设置配置  
+
+目录下新增`.eslintrc.js`和`.prettierrc`文件。  
+如果VSCode中已经存在插件prettier，请关闭，两者在保存的时候，VSCode中的prettier插件的优先级大于项目中的prettier。  
+

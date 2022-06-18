@@ -10,7 +10,7 @@ import './index.scss'
 
 export default {
   setup() {
-    const msg = ref('调试changelog5')
+    const msg = ref('调试changelog6')
     return {
       msg
     }

@@ -10,7 +10,7 @@ import './index.scss'
 
 export default {
   setup() {
-    const msg = ref('测试changelog自动生成')
+    const msg = ref('调试changelog')
     return {
       msg
     }

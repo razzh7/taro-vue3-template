@@ -29,7 +29,8 @@
     "dev:quickapp": "npm run build:quickapp -- --watch",
     "tsc": "vue-tsc --noEmit --skipLibCheck",
     "lint": "eslint --ext .vue --ext .js --ext .ts src/",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "browserslist": [
     "last 3 versions",
@@ -43,6 +44,8 @@
     "@tarojs/plugin-framework-vue3": "3.4.12",
     "@tarojs/runtime": "3.4.12",
     "@tarojs/taro": "3.4.12",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-cli": "^2.2.2",
     "vue": "^3.0.0"
   },
   "devDependencies": {

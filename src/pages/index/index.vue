@@ -10,11 +10,9 @@ import './index.scss'
 
 export default {
   setup() {
-    const msg = ref('调试changelog8')
-    const bug = ref('假装修了一个bug2')
+    const msg = ref('Hello World')
     return {
-      msg,
-      bug
+      msg
     }
   }
 }

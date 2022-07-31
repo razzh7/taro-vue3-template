@@ -12,7 +12,7 @@
 taro init myApp
 ```
 
-![img](/ScreenShots/init.png)
+![img](/screenshots/init.png)
 
 构建 weapp
 
@@ -27,11 +27,11 @@ yarn dev:weapp
 
 好在 taro 在打包的时候在 shell 中输出了提示：
 
-![img](/ScreenShots/tips.png)
+![img](/screenshots/tips.png)
 
 在命令中添加`production`就可以开启生产环境的压缩模式，taro-cli 搭建的初始代码经过压缩后为 267KB
 
-![img](/ScreenShots/analyse.png)
+![img](/screenshots/analyse.png)
 
 ## 二、设置代码规范的 Eslint Prettier
 
@@ -70,7 +70,7 @@ yarn add lint-staged -D
 npx husky add .husky/pre-commit "npx lint-staged"
 # 配置.lintstagedrc.js的检查规则
 ```
-![img](/ScreenShots/staged-lint.png)
+![img](/screenshots/staged-lint.png)
 #### 3、commitlint
 用于规范git commit提交的时候的信息格式，有助于多人开发时候的commit信息统一规范
 ```shell

@@ -92,6 +92,8 @@ const verticalClick = () => {
     @cancel="onCancel"
     @ok="onOkAsync"
   />
+  <h2>custom components</h2>
+  <razzh></razzh>
 </template>
 
 <style scoped lang="scss"></style>

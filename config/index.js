@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'myApp',
   date: '2022-6-18',
@@ -11,8 +13,8 @@ const config = {
   sourceRoot: 'src',
   outputRoot: 'dist',
   plugins: ['@tarojs/plugin-html'],
-  // 给 sass-loader 传递选项 ！！！！ 按需加载方式必须配置
   sass: {
+    resource: [path.resolve(__dirname, '..', 'src/styles/custom_theme.scss')], // 自定义主题样式
     data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
   },
   defineConstants: {},

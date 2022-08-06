@@ -10,6 +10,7 @@ import MyButton from '@/components/Button/index.vue'
     <MyButton></MyButton>
   </view>
   <view class="mt-10 text-center">
-    <text class="c-blue">unocss样式</text>
+    <text class="c-blue">UnoCss样式</text>
   </view>
+  <view class="my-test"></view>
 </template>

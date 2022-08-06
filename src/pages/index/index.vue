@@ -12,5 +12,4 @@ import MyButton from '@/components/Button/index.vue'
   <view class="mt-10 text-center">
     <text class="c-blue">UnoCss样式</text>
   </view>
-  <view class="my-test"></view>
 </template>

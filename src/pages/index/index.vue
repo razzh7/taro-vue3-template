@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import MyDialog from '@/components/Dialog/index.vue'
-import MyButton from '@/components/Button/index.vue'
+import MyDialog from '@/components/Dialog.vue'
+import MyButton from '@/components/Button.vue'
 </script>
 
 <template>
   <MyDialog></MyDialog>
   <view class="text-center">
-    <view class="mb-5">全局组件</view>
+    <view class="mb-5">按钮组件</view>
     <MyButton></MyButton>
   </view>
   <view class="mt-10 text-center">

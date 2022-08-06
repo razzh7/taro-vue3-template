@@ -1,7 +1,9 @@
 import path from 'path'
 import UnoCSS from '@unocss/webpack'
+
 const webpackChain = chain => chain.plugin('unocss').use(UnoCSS())
 const r = p => path.resolve(__dirname, '..', p)
+
 const config = {
   projectName: 'myApp',
   date: '2022-6-18',

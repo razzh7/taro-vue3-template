@@ -2,6 +2,6 @@
 
 <template>
   <view>
-    <nut-button type="primary">全局组件按钮</nut-button>
+    <nut-button type="primary">组件按钮</nut-button>
   </view>
 </template>

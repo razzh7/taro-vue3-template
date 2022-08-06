@@ -1463,14 +1463,6 @@
   resolved "https://registry.npmmirror.com/@stencil/core/-/core-2.9.0.tgz#cbac84b996475b8fc983931539ed1261174e2df3"
   integrity sha512-kY3xYolZoJO1MKslL0NQccHy72R3TIl1prHgfmIrEoGcnMgc6uiskdWaGMuI5/sCGz9T+QuTVz76B1H2ySyBZg==
 
-"@tarojs/api@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.npmmirror.com/@tarojs/api/-/api-3.4.10.tgz#bcb89c6acbefebf8d8f212a82980fa0af462096d"
-  integrity sha512-y2Apb0PPV5gTCgnH18xqSDO3dzZLc97jqyHVMADgfGMEqJado2O3+E9n0spHR9hub0yH+SYCwo+WLcyzmPtVFQ==
-  dependencies:
-    "@babel/runtime" "^7.14.5"
-    "@tarojs/runtime" "3.4.10"
-
 "@tarojs/api@3.4.12":
   version "3.4.12"
   resolved "https://registry.npmmirror.com/@tarojs/api/-/api-3.4.12.tgz#31b33609d10761d256432e862ed9ea534f41a63c"
@@ -1478,22 +1470,6 @@
   dependencies:
     "@babel/runtime" "^7.14.5"
     "@tarojs/runtime" "3.4.12"
-
-"@tarojs/components@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.npmmirror.com/@tarojs/components/-/components-3.4.10.tgz#b64bdab8c7c4c90e786111f8afff852a9ff9d2b5"
-  integrity sha512-kcqJNbjZLavzYu/OfF9bd6tB1znHuj7cgCyejX7PlyVdETGLeNz1NRygk8y/1j/I8GarKQ53Ve4k1Ibw48zX7Q==
-  dependencies:
-    "@stencil/core" "2.9.0"
-    "@tarojs/taro" "3.4.10"
-    better-scroll "^1.14.1"
-    classnames "^2.2.5"
-    hls.js "^1.1.5"
-    intersection-observer "^0.7.0"
-    omit.js "^1.0.0"
-    resolve-pathname "^3.0.0"
-    swiper "6.8.0"
-    weui "^1.1.2"
 
 "@tarojs/components@3.4.12":
   version "3.4.12"
@@ -1675,17 +1651,6 @@
     react-reconciler "0.26.1"
     scheduler "^0.20.1"
 
-"@tarojs/router@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.npmmirror.com/@tarojs/router/-/router-3.4.10.tgz#3ffb19bf320da1c4c75cc7ee99e7516d5bf3506d"
-  integrity sha512-WzoAYe3lZa31sLbuoTew2epmeKdOIUVZu4ZMGRHges4KJDpU/QC4H2eI5g178mwKt8m4gwD1NUoYmv4ytx04+Q==
-  dependencies:
-    "@tarojs/runtime" "3.4.10"
-    "@tarojs/taro" "3.4.10"
-    history "^5.1.0"
-    query-string "^7.1.1"
-    universal-router "^8.3.0"
-
 "@tarojs/router@3.4.12":
   version "3.4.12"
   resolved "https://registry.npmmirror.com/@tarojs/router/-/router-3.4.12.tgz#d6e46e6aa35f3f29d6b37c11b824ec4f933fed7e"
@@ -1704,16 +1669,6 @@
   dependencies:
     "@tarojs/helper" "3.4.12"
     scss-bundle "^3.0.2"
-
-"@tarojs/runtime@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.npmmirror.com/@tarojs/runtime/-/runtime-3.4.10.tgz#e5dffb250f7f3c7229802080dcfec776c38a21b6"
-  integrity sha512-ZKCl/yXOxFszMpyujsqUGZYAlF9bSgl3VlFMSV3PPI+H++Ry8SDgAwaSktMsm88FgYoSrKtwXNqTli4Ea1y5aw==
-  dependencies:
-    "@tarojs/shared" "3.4.10"
-    inversify "5.1.1"
-    lodash-es "4.17.15"
-    reflect-metadata "^0.1.13"
 
 "@tarojs/runtime@3.4.12":
   version "3.4.12"
@@ -1740,30 +1695,10 @@
     tapable "^1.1.3"
     webpack-merge "^4.2.2"
 
-"@tarojs/shared@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.npmmirror.com/@tarojs/shared/-/shared-3.4.10.tgz#5414859fa3b79c2f8417c31ed7cf2a03604961b1"
-  integrity sha512-YnnCgced35jftBzb9jen/M+ukAMVuOaCPJo7i+VShk3xKXzrwAWL26TZFkSLi8KM1wgjekZ49NsdY0bGt4rfYA==
-
 "@tarojs/shared@3.4.12":
   version "3.4.12"
   resolved "https://registry.npmmirror.com/@tarojs/shared/-/shared-3.4.12.tgz#4f63a8c96904cbbe3e00a24e6f36e74485c72f31"
   integrity sha512-ELpEOA7Uzr5rQujfSmVS+ugTO22ZP8j3vi2AfrwJKg7zit1kZcBnDUIsN6+3Es3Vnp1oXsyQobWrgn30xYt2Ug==
-
-"@tarojs/taro-h5@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.npmmirror.com/@tarojs/taro-h5/-/taro-h5-3.4.10.tgz#19e97bfe5e9b127b1c7d8e02c3d9a6d5bbf03beb"
-  integrity sha512-PurEc1SBjANr4zGY1/B0OgmPdu69BlqUjGplHjP6IsOrirb+bC0jmw1gNB0g4W1o+zx6hDMhhSAv6WhAMn6oaA==
-  dependencies:
-    "@tarojs/api" "3.4.10"
-    "@tarojs/router" "3.4.10"
-    "@tarojs/runtime" "3.4.10"
-    "@tarojs/taro" "3.4.10"
-    base64-js "^1.3.0"
-    jsonp-retry "^1.0.3"
-    mobile-detect "^1.4.2"
-    query-string "^7.1.1"
-    whatwg-fetch "^3.4.0"
 
 "@tarojs/taro-h5@3.4.12":
   version "3.4.12"
@@ -1788,15 +1723,6 @@
     "@tarojs/helper" "3.4.12"
     "@tarojs/taro" "3.4.12"
     loader-utils "^1.2.3"
-
-"@tarojs/taro@3.4.10":
-  version "3.4.10"
-  resolved "https://registry.npmmirror.com/@tarojs/taro/-/taro-3.4.10.tgz#64c6ffbbd3937184e2ae423b2d975868a59aa2ac"
-  integrity sha512-tukgYlD8OAN+tskNc52Gh2ugnBM6rhsPcrplisufKbEnjl7Qy8K2vS4zcl2eBqd9YMrmFmTWCmVxHS4SMpw2Zg==
-  dependencies:
-    "@tarojs/api" "3.4.10"
-    "@tarojs/runtime" "3.4.10"
-    "@tarojs/taro-h5" "3.4.10"
 
 "@tarojs/taro@3.4.12":
   version "3.4.12"

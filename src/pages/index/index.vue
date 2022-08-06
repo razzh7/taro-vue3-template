@@ -35,4 +35,5 @@ export default {
     >
     </nut-dialog>
   </nut-cell-group>
+  <view class="p-36 c-blue">11111</view>
 </template>

@@ -1,5 +1,7 @@
-const path = require('path')
-
+import path from 'path'
+import UnoCSS from '@unocss/webpack'
+const webpackChain = chain => chain.plugin('unocss').use(UnoCSS())
+const r = p => path.resolve(__dirname, '..', p)
 const config = {
   projectName: 'myApp',
   date: '2022-6-18',
@@ -22,8 +24,12 @@ const config = {
     patterns: [],
     options: {}
   },
+  alias: {
+    '@': r('src')
+  },
   framework: 'vue3',
   mini: {
+    webpackChain,
     postcss: {
       pxtransform: {
         enable: true,
@@ -45,6 +51,7 @@ const config = {
     }
   },
   h5: {
+    webpackChain,
     publicPath: '/',
     staticDirectory: 'static',
     postcss: {

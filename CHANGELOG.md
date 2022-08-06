@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.11-alpha.0...v0.0.11) (2022-08-06)
+
+
+### Features
+
+* 解决底部安全区域问题 ([0323e96](https://github.com/rzhAvenir/taro-vue3-template/commit/0323e9603832c4618f2a24fe51ce92140c273991))
+* 自定义样式 ([7490a10](https://github.com/rzhAvenir/taro-vue3-template/commit/7490a10fa8b7ab17ace11488d6fead1f61d4576e))
+* 自定义组件 ([96a7e77](https://github.com/rzhAvenir/taro-vue3-template/commit/96a7e775f1047879b5ec4e3233b90dfb37838802))
+
 ### [0.0.11-alpha.0](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.10...v0.0.11-alpha.0) (2022-06-19)
 
 ### [0.0.10](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.9...v0.0.10) (2022-06-18)

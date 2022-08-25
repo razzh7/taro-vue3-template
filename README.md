@@ -17,7 +17,7 @@ taro init myApp
 构建 weapp
 
 ```bash
-yarn dev:weapp
+pnpm dev:weapp
 ```
 
 打包完成后发现两点问题
@@ -40,7 +40,7 @@ yarn dev:weapp
 #### 1、安装依赖
 
 ```shell
-yarn add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin-prettier prettier -D
+pnpm add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin-prettier prettier -D
 ```
 #### 2、设置配置  
 
@@ -57,15 +57,15 @@ yarn add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin
 
 #### 1、husky
 ```shell
-yarn add husky -D
+pnpm add husky -D
 # 向package中添加script
 npm set-script prepare "husky install" 
 # 始化husky,将 git hooks 钩子交由husky执行
-yarn prepare 
+pnpm prepare 
 ```
 #### 2、lint-staged
 ```shell
-yarn add lint-staged -D
+pnpm add lint-staged -D
 # 添加commit前置hook 提交前进行代码检查
 npx husky add .husky/pre-commit "npx lint-staged"
 # 配置.lintstagedrc.js的检查规则
@@ -74,7 +74,7 @@ npx husky add .husky/pre-commit "npx lint-staged"
 #### 3、commitlint
 用于规范git commit提交的时候的信息格式，有助于多人开发时候的commit信息统一规范
 ```shell
-yarn add @commitlint/cli @commitlint/config-conventional -D
+pnpm add @commitlint/cli @commitlint/config-conventional -D
 # 配置commitlint配置文件
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 # 添加husky hook -> commit-msg
@@ -100,12 +100,12 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 #### 4、conventional-changelog
 用于记录CHANGELOG日志，可以看到团队的更新日志，并能点击对应的commit看相应的代码
 ```
-yarn add conventional-changelog conventional-changelog-cli -D
+pnpm add conventional-changelog conventional-changelog-cli -D
 ```
 [Example](https://github.com/karma-runner/karma/blob/master/CHANGELOG.md)
 #### 5、standard-version
 ```
-yarn add standard-version -D
+pnpm add standard-version -D
 # 配置脚本
 npm set-script release "standard-version"
 ```

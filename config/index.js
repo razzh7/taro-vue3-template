@@ -1,8 +1,8 @@
 import path from 'path'
 import UnoCSS from '@unocss/webpack'
 
-const webpackChain = chain => chain.plugin('unocss').use(UnoCSS())
-const r = p => path.resolve(__dirname, '..', p)
+const webpackChain = (chain) => chain.plugin('unocss').use(UnoCSS())
+const r = (p) => path.resolve(__dirname, '..', p)
 
 const config = {
   projectName: 'myApp',
@@ -12,64 +12,66 @@ const config = {
     640: 2.34 / 2,
     750: 1,
     828: 1.81 / 2,
-    375: 2 / 1
+    375: 2 / 1,
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
   plugins: ['@tarojs/plugin-html'],
   sass: {
     resource: [path.resolve(__dirname, '..', 'src/styles/custom_theme.scss')], // 自定义主题样式
-    data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
+    data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`,
   },
   defineConstants: {},
   copy: {
     patterns: [],
-    options: {}
+    options: {},
   },
   alias: {
-    '@': r('src')
+    '@': r('src'),
   },
   framework: 'vue3',
+  compiler: 'webpack5',
   mini: {
     webpackChain,
     postcss: {
       pxtransform: {
         enable: true,
-        config: {}
+        config: {},
       },
       url: {
         enable: true,
         config: {
-          limit: 1024 // 设定转换尺寸上限
-        }
+          limit: 1024, // 设定转换尺寸上限
+        },
       },
       cssModules: {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
-          generateScopedName: '[name]__[local]___[hash:base64:5]'
-        }
-      }
-    }
+          generateScopedName: '[name]__[local]___[hash:base64:5]',
+        },
+      },
+    },
   },
   h5: {
     webpackChain,
     publicPath: '/',
+    esnextModules: ['nutui-taro'],
     staticDirectory: 'static',
     postcss: {
       autoprefixer: {
         enable: true,
-        config: {}
+        config: {},
       },
       cssModules: {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
-          generateScopedName: '[name]__[local]___[hash:base64:5]'
-        }
-      }
-    }
-  }
+          generateScopedName: '[name]__[local]___[hash:base64:5]',
+        },
+      },
+    },
+  },
 }
 
 module.exports = function (merge) {

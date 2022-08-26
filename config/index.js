@@ -1,7 +1,14 @@
 import path from 'path'
 import UnoCSS from '@unocss/webpack'
+import transformWeClass from 'unplugin-transform-we-class/webpack'
 
-const webpackChain = chain => chain.plugin('unocss').use(UnoCSS())
+const webpackChain = chain => {
+  if (process.env.TARO_ENV === 'h5') {
+    chain.plugin('analyzer').use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+  }
+  chain.plugin('unocss').use(UnoCSS())
+  chain.plugin('transformWeClass').use(transformWeClass())
+}
 const r = p => path.resolve(__dirname, '..', p)
 
 const config = {
@@ -59,6 +66,10 @@ const config = {
     esnextModules: ['nutui-taro'],
     staticDirectory: 'static',
     postcss: {
+      pxtransform: {
+        enable: true,
+        config: {}
+      },
       autoprefixer: {
         enable: true,
         config: {}

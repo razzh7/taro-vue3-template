@@ -1,5 +1,11 @@
-import { defineConfig, presetAttributify, presetUno, presetTypography } from 'unocss'
-import remToRpx from './build/rem2rpx'
+import { defineConfig } from 'unocss'
+import presetWeapp from 'unocss-preset-weapp'
 export default defineConfig({
-  presets: [presetUno(), presetAttributify(), presetTypography(), remToRpx({ baseFontSize: 8 })]
+  presets: [
+    presetWeapp({
+      isH5: process.env.TARO_ENV === 'h5',
+      platform: 'taro',
+      taroWebpack: 'webpack5'
+    })
+  ]
 })

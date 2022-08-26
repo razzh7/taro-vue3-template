@@ -17,7 +17,7 @@ taro init myApp
 构建 weapp
 
 ```bash
-pnpm dev:weapp
+pnpm dev
 ```
 
 打包完成后发现两点问题

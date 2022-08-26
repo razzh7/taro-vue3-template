@@ -33,7 +33,8 @@ pnpm dev:weapp
 
 ![img](/screenshots/analyse.png)  
 **PS**：在编译H5平台的时候，不推荐开启`production`模式，会导致编译报错：
-![img](/screenshots/exceed-size.png)
+![img](/screenshots/exceed-size.png)  
+H5默认开启`webpack-bundle-analyzer`来分析打包后的依赖:
 ## 二、设置代码规范的 Eslint Prettier
 
 - 代码规范 ESlint
@@ -124,12 +125,12 @@ npm set-script release "standard-version"
 - git push --tag 将生成的tag上传值云端  
 #### 四、安装 unocss
 ```js
-pnpm i unocss @unocss/webpack -D
+pnpm add unocss @unocss/webpack -D
 ```
 在入口文件[app.ts]中引入`unocss`
 另外小程序不支持书写` \\，\: \[ \$ \.` 等转义类名，需要插件进行转换操作
 ```js
-pnpm i unocss-preset-weapp unplugin-transform-we-class -D
+pnpm add unocss-preset-weapp unplugin-transform-we-class -D
 ```
 在根目录下新增`unocss.config.ts`，引入如下代码：
 ```js
@@ -146,5 +147,11 @@ export default defineConfig({
 })
 ```
 另外还要在`taro`的 [webpack config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js) 文件中配置`H5`平台和`小程序`平台。
+##### 推荐使用class写法
+```html
+<view class="m-10"></view>
+
+<view class="flex items-center text-green/500"></view>
+```
 
 

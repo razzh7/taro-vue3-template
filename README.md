@@ -31,8 +31,9 @@ pnpm dev:weapp
 
 在命令中添加`production`就可以开启生产环境的压缩模式，taro-cli 搭建的初始代码经过压缩后为 267KB
 
-![img](/screenshots/analyse.png)
-
+![img](/screenshots/analyse.png)  
+**PS**：在编译H5平台的时候，不推荐开启`production`模式，会导致编译报错：
+![img](/screenshots/exceed-size.png)
 ## 二、设置代码规范的 Eslint Prettier
 
 - 代码规范 ESlint
@@ -120,5 +121,30 @@ npm set-script release "standard-version"
 - git tag
 - npm run release
 - git push
-- git push --tag 将生成的tag上传值云端 
+- git push --tag 将生成的tag上传值云端  
+#### 四、安装 unocss
+```js
+pnpm i unocss @unocss/webpack -D
+```
+在入口文件[app.ts]中引入`unocss`
+另外小程序不支持书写` \\，\: \[ \$ \.` 等转义类名，需要插件进行转换操作
+```js
+pnpm i unocss-preset-weapp unplugin-transform-we-class -D
+```
+在根目录下新增`unocss.config.ts`，引入如下代码：
+```js
+import { defineConfig } from 'unocss'
+import presetWeapp from 'unocss-preset-weapp'
+export default defineConfig({
+  presets: [
+    presetWeapp({
+      isH5: process.env.TARO_ENV === 'h5',
+      platform: 'taro',
+      taroWebpack: 'webpack5'
+    })
+  ]
+})
+```
+另外还要在`taro`的 [webpack config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js) 文件中配置`H5`平台和`小程序`平台。
+
 

@@ -32,9 +32,12 @@ pnpm dev:weapp
 在命令中添加`production`就可以开启生产环境的压缩模式，taro-cli 搭建的初始代码经过压缩后为 267KB
 
 ![img](/screenshots/analyse.png)  
-**PS**：在编译 `H5` 平台的时候，不推荐开启`production`模式，会导致编译报错：
+**PS**：在编译 `H5` 平台的时候，不推荐开启`production`模式，会导致编译报错：  
+
 ![img](/screenshots/exceed-size.png)  
-H5 默认开启`webpack-bundle-analyzer`来分析打包后的依赖
+H5 默认开启`webpack-bundle-analyzer`来分析打包后的依赖：  
+
+![img](/screenshots/webpack-analyzer.png)
 ## 二、设置代码规范的 Eslint Prettier
 
 - 代码规范 ESlint

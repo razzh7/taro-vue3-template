@@ -9,7 +9,7 @@ import MyButton from '@/components/Button.vue'
     <view class="mb-5">按钮组件</view>
     <MyButton></MyButton>
   </view>
-  <view class="mt-10 text-center">
-    <text class="c-blue">UnoCss样式</text>
+  <view class="mt-2 text-center">
+    <text class="text-blue/500">UnoCss样式</text>
   </view>
 </template>

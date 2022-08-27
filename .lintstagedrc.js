@@ -1,8 +1,3 @@
 module.exports = {
-  'src/**/*.{js,jsx,vue,ts,tsx}': ['yarn lint'],
-  '*.{vue,ts}': [
-    () => {
-      return `vue-tsc --noEmit --skipLibCheck`
-    },
-  ],
+  '*.{vue,js,jsx,ts,tsx,json}': ['pnpm lint']
 }

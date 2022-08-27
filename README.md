@@ -29,13 +29,13 @@ pnpm dev
 
 ![img](/screenshots/tips.png)
 
-在命令中添加`production`就可以开启生产环境的压缩模式，taro-cli 搭建的初始代码经过压缩后为 267KB
+在命令中添加 `production` 就可以开启生产环境的压缩模式，taro-cli 搭建的初始代码经过压缩后为 267KB
 
 ![img](/screenshots/analyse.png)  
-**PS**：在编译 `H5` 平台的时候，不推荐开启`production`模式，会导致编译报错：  
+**PS**：在编译 `H5` 平台的时候，不推荐开启 `production` 模式，会导致编译报错：  
 
 ![img](/screenshots/exceed-size.png)  
-H5 默认开启`webpack-bundle-analyzer`来分析打包后的依赖：  
+H5 默认开启 `webpack-bundle-analyzer` 来分析打包后的依赖：  
 
 ![img](/screenshots/webpack-analyzer.png)
 ## 二、设置代码规范的 Eslint Prettier
@@ -49,7 +49,7 @@ pnpm add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin
 ```
 #### 2、设置配置  
 
-目录下新增`.eslintrc.js`和`.prettierrc`文件。  
+目录下新增 `.eslintrc.js` 和 `.prettierrc` 文件。  
 如果VSCode中已经存在插件prettier，请关闭，两者在保存的时候，VSCode中的prettier插件的优先级大于项目中的prettier。
 
 ## 三、Git提交规范
@@ -114,8 +114,8 @@ pnpm add standard-version -D
 # 配置脚本
 npm set-script release "standard-version"
 ```
-配合`conventional-changelog`使用，`standard-version`能做到:
-- 可以自动添加`package`中的版本号
+配合 `conventional-changelog` 使用，`standard-version` 能做到:
+- 可以自动添加 `package` 中的版本号
 - 基于提交的commit自动生成changelog
 - 自动为当前版本号创建一个tag
 
@@ -130,7 +130,7 @@ npm set-script release "standard-version"
 ```js
 pnpm add unocss @unocss/webpack -D
 ```
-在入口文件[app.ts]中引入`unocss`
+在入口文件 [app.ts](https://github.com/rzhAvenir/taro-vue3-template/blob/master/src/app.ts) 中引入 `unocss` 
 另外小程序不支持书写` \\，\: \[ \$ \.` 等转义类名，需要插件进行转换操作
 ```js
 pnpm add unocss-preset-weapp unplugin-transform-we-class -D
@@ -156,8 +156,8 @@ export default defineConfig({
   ]
 })
 ```
-另外还要在`taro`的 [webpack config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js) 文件中配置`H5`平台和`小程序`平台。  
-> PS: taro不同版本的根字体不同，需要在`index.html`的`body`上添加**class="text-base"**，默认字体大小为20px。
+另外还要在 `taro` 的 [webpack config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js) 文件中配置 `H5` 平台和 `小程序` 平台。  
+> PS: taro不同版本的根字体不同，需要在 `index.html` 的 `body` 上添加**class="text-base"**，默认字体大小为20px。
 ##### 推荐使用class写法
 ```html
 <view class="mt-40px">unocss</view>

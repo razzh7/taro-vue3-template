@@ -144,17 +144,37 @@ export default defineConfig({
     presetWeapp({
       isH5: process.env.TARO_ENV === 'h5',
       platform: 'taro',
-      taroWebpack: 'webpack5'
+      taroWebpack: 'webpack5',
+      designWidth: 375,
+      deviceRatio: {
+        640: 2.34 / 2,
+        750: 1,
+        828: 1.81 / 2,
+        375: 2 / 1
+      }
     })
   ]
 })
 ```
-另外还要在`taro`的 [webpack config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js) 文件中配置`H5`平台和`小程序`平台。
+另外还要在`taro`的 [webpack config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js) 文件中配置`H5`平台和`小程序`平台。  
+> PS: taro不同版本的根字体不同，需要在`index.html`的`body`上添加**class="text-base"**，默认字体大小为20px。
 ##### 推荐使用class写法
 ```html
-<view class="m-10"></view>
+<view class="mt-40px">unocss</view>
 
-<view class="flex items-center text-green/500"></view>
+<view class="flex items-center text-green/500">unocss</view>
+```
+对应小程序转换出来将会是:
+```css
+.mt-40px {
+  margin-top: 80rpx;
+}
+```
+对应H5平台转换结果：
+```css
+.mt-40px {
+  margin-top: 2rem;
+}
 ```
 
 

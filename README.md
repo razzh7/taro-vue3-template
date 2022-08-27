@@ -17,7 +17,7 @@ taro init myApp
 构建 weapp
 
 ```bash
-pnpm dev
+pnpm dev weapp
 ```
 
 打包完成后发现两点问题
@@ -50,15 +50,15 @@ pnpm add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin
 #### 2、设置配置  
 
 目录下新增 `.eslintrc.js` 和 `.prettierrc` 文件。  
-如果VSCode中已经存在插件prettier，请关闭，两者在保存的时候，VSCode中的prettier插件的优先级大于项目中的prettier。
+如果 VSCode 中已经存在插件 prettier，请关闭。两者在保存的时候，VSCode 中的 prettier 插件的优先级大于项目中的 prettier。
 
 ## 三、Git提交规范
 
 - Git钩子控制 [husky](https://typicode.github.io/husky/#/)
 - Git暂存区lint检查 [lint-staged](https://github.com/okonet/lint-staged)
 - Git commit提交检查 [commitlint](https://github.com/conventional-changelog/commitlint)
-- Git自动生成commit信息[changelog](https://github.com/conventional-changelog-archived-repos/conventional-changelog-cli)  
-- Git版本控制[standard-version](https://www.npmjs.com/package/standard-version)
+- Git自动生成commit信息 [changelog](https://github.com/conventional-changelog-archived-repos/conventional-changelog-cli)  
+- Git版本控制 [standard-version](https://www.npmjs.com/package/standard-version)
 
 #### 1、husky
 ```shell
@@ -77,7 +77,7 @@ npx husky add .husky/pre-commit "npx lint-staged"
 ```
 ![img](/screenshots/staged-lint.png)
 #### 3、commitlint
-用于规范git commit提交的时候的信息格式，有助于多人开发时候的commit信息统一规范
+用于规范 git commit 提交的时候的信息格式，有助于多人开发时候的 commit 信息统一规范
 ```shell
 pnpm add @commitlint/cli @commitlint/config-conventional -D
 # 配置commitlint配置文件
@@ -100,10 +100,10 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 | style  | 代码格式修改，注意不是css修改 |
 | test  | 测试用例修改 |
 
-来看看官方的[demo](https://github.com/conventional-changelog/commitlint)示例：
+来看看官方的 [demo](https://github.com/conventional-changelog/commitlint) 示例：
 ![图片](https://raw.githubusercontent.com/conventional-changelog/commitlint/6181d69c25371fd5830a5a9b7173a200d3c9fed5/docs/assets/commitlint.svg)
 #### 4、conventional-changelog
-用于记录CHANGELOG日志，可以看到团队的更新日志，并能点击对应的commit看相应的代码
+用于记录 CHANGELOG 日志，可以看到团队的更新日志，并能点击对应的 commit 看相应的代码
 ```
 pnpm add conventional-changelog conventional-changelog-cli -D
 ```
@@ -135,7 +135,7 @@ pnpm add unocss @unocss/webpack -D
 ```js
 pnpm add unocss-preset-weapp unplugin-transform-we-class -D
 ```
-在根目录下新增`unocss.config.ts`，引入如下代码：
+在根目录下新增 `unocss.config.ts`，引入如下代码：
 ```js
 import { defineConfig } from 'unocss'
 import presetWeapp from 'unocss-preset-weapp'

@@ -9,7 +9,6 @@ const webpackChain = chain => {
   chain.plugin('unocss').use(UnoCSS())
   chain.plugin('transformWeClass').use(transformWeClass())
 }
-const r = p => path.resolve(__dirname, '..', p)
 
 const config = {
   projectName: 'myApp',
@@ -34,7 +33,7 @@ const config = {
     options: {}
   },
   alias: {
-    '@': r('src')
+    '@': path.resolve(__dirname, '..', 'src')
   },
   framework: 'vue3',
   compiler: 'webpack5',

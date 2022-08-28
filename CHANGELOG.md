@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.11...v0.0.12) (2022-08-28)
+
+
+### Bug Fixes
+
+* 修复格式错误 ([a5e150a](https://github.com/rzhAvenir/taro-vue3-template/commit/a5e150ac7ead4cf7ad7e4388418def3cc2018818))
+* 修复类型错误 ([eb9034a](https://github.com/rzhAvenir/taro-vue3-template/commit/eb9034a9ec0be5772fb488ad6a3a0a24ca3de96f))
+* clear Vue warn ([f168d24](https://github.com/rzhAvenir/taro-vue3-template/commit/f168d243fd2fcfc1f11e65eff250d5886a8fe5eb))
+
 ### [0.0.11](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.11-alpha.0...v0.0.11) (2022-08-06)
 
 

@@ -53,11 +53,11 @@ pnpm add @vue/eslint-config-prettier @vue/eslint-config-typescript eslint-plugin
 
 ## 三、Git提交规范
 
-- Git钩子控制 [husky](https://typicode.github.io/husky/#/)
-- Git暂存区lint检查 [lint-staged](https://github.com/okonet/lint-staged)
-- Git commit提交检查 [commitlint](https://github.com/conventional-changelog/commitlint)
-- Git自动生成commit信息 [changelog](https://github.com/conventional-changelog-archived-repos/conventional-changelog-cli)  
-- Git版本控制 [standard-version](https://www.npmjs.com/package/standard-version)
+- Git 钩子控制 [husky](https://typicode.github.io/husky/#/)
+- Git 暂存区 lint 检查 [lint-staged](https://github.com/okonet/lint-staged)
+- Git commit 提交检查 [commitlint](https://github.com/conventional-changelog/commitlint)
+- Git 自动生成 commit 信息 [changelog](https://github.com/conventional-changelog-archived-repos/conventional-changelog-cli)  
+- Git 版本控制 [standard-version](https://www.npmjs.com/package/standard-version)
 
 #### 1、husky
 ```shell

@@ -157,7 +157,7 @@ export default defineConfig({
 ```
 另外还要在 `taro` 的 [webpack config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js) 文件中配置 `H5` 平台和 `小程序` 平台。  
 > PS: taro不同版本的根字体不同，需要在 `index.html` 的 `body` 上添加**class="text-base"**，默认字体大小为20px。
-##### 推荐使用class写法
+##### 推荐使用 class 写法
 ```html
 <view class="mt-40px">unocss</view>
 

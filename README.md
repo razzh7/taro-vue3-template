@@ -12,7 +12,6 @@
 taro init myApp
 ```
 
-![img](/screenshots/init.png)
 
 构建 weapp
 
@@ -177,4 +176,6 @@ export default defineConfig({
 }
 ```
 
-
+#### 五、Taro 多平台编译组件
+参考 [Taro 多端组件](https://taro-docs.jd.com/taro/docs/envs#%E5%A4%9A%E7%AB%AF%E7%BB%84%E4%BB%B6)  
+对应的演示 Demo 分别在 [pages index](https://github.com/rzhAvenir/taro-vue3-template/blob/master/src/pages/index/index.vue) 和 [components](https://github.com/rzhAvenir/taro-vue3-template/tree/master/src/components) 下

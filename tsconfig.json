@@ -18,13 +18,11 @@
     "jsx": "preserve",
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": ["./src", "global.d.ts"],
+  "include": ["./src", "global.d.ts", "shims-vue.d.ts"],
   "compileOnSave": false
 }

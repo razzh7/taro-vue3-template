@@ -34,6 +34,7 @@ pnpm dev weapp
 **PS**：在编译 `H5` 平台的时候，不推荐开启 `production` 模式，会导致编译报错：  
 
 ![img](/screenshots/exceed-size.png)  
+
 H5 默认开启 `webpack-bundle-analyzer` 来分析打包后的依赖：  
 
 ![img](/screenshots/webpack-analyzer.png)
@@ -99,7 +100,8 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 | style  | 代码格式修改，注意不是css修改 |
 | test  | 测试用例修改 |
 
-来看看官方的 [demo](https://github.com/conventional-changelog/commitlint) 示例：
+来看看官方的 [demo](https://github.com/conventional-changelog/commitlint) 示例：  
+
 ![图片](https://raw.githubusercontent.com/conventional-changelog/commitlint/6181d69c25371fd5830a5a9b7173a200d3c9fed5/docs/assets/commitlint.svg)
 #### 4、conventional-changelog
 用于记录 CHANGELOG 日志，可以看到团队的更新日志，并能点击对应的 commit 看相应的代码

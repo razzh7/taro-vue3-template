@@ -1,3 +1,4 @@
 .vscode
 .idea
 index.html
+node_modules/

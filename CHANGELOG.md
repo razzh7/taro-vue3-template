@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.12...v1.0.0) (2022-09-23)
+
+
+### Features
+
+* add Taro h5/weapp 组件 ([1150c11](https://github.com/rzhAvenir/taro-vue3-template/commit/1150c11dcc2cd665012bccf4331e953f8d23e5c4))
+
+
+### Bug Fixes
+
+* pnpm lint not run ([5e0365c](https://github.com/rzhAvenir/taro-vue3-template/commit/5e0365c2c9926e72bba96194d228e920ea89df28))
+
 ### [0.0.12](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.11...v0.0.12) (2022-08-28)
 
 

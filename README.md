@@ -31,6 +31,7 @@ pnpm dev weapp
 在命令中添加 `production` 就可以开启生产环境的压缩模式，taro-cli 搭建的初始代码经过压缩后为 267KB
 
 ![img](/screenshots/analyse.png)  
+
 **PS**：在编译 `H5` 平台的时候，不推荐开启 `production` 模式，会导致编译报错：  
 
 ![img](/screenshots/exceed-size.png)  
@@ -117,8 +118,11 @@ npm set-script release "standard-version"
 ```
 配合 `conventional-changelog` 使用，`standard-version` 能做到:
 - 可以自动添加 `package` 中的版本号
-- 基于提交的commit自动生成changelog
-- 自动为当前版本号创建一个tag
+- 基于提交的commit自动生成 changelog
+- 自动为当前版本号创建一个 tag，你也可以自己指定版本：
+```shell
+npm run release -- --release-as xxx (you want version)
+```
 
 #### 发版的工作流
 - git add .
@@ -126,7 +130,7 @@ npm set-script release "standard-version"
 - git tag
 - npm run release
 - git push
-- git push --tag 将生成的tag上传值云端  
+- git push --tag 将生成的 `tag` 上传至远程仓库
 #### 四、安装 unocss
 ```js
 pnpm add unocss @unocss/webpack -D
@@ -159,6 +163,7 @@ export default defineConfig({
 ```
 另外还要在 `taro` 的 [webpack config](https://github.com/rzhAvenir/taro-vue3-template/blob/master/config/index.js) 文件中配置 `H5` 平台和 `小程序` 平台。  
 > PS: taro不同版本的根字体不同，需要在 `index.html` 的 `body` 上添加**class="text-base"**，默认字体大小为20px。
+
 ##### 推荐使用 class 写法
 ```html
 <view class="mt-40px">unocss</view>
@@ -171,7 +176,7 @@ export default defineConfig({
   margin-top: 80rpx;
 }
 ```
-对应H5平台转换结果：
+对应 H5 平台转换结果：
 ```css
 .mt-40px {
   margin-top: 2rem;
@@ -180,4 +185,4 @@ export default defineConfig({
 
 #### 五、Taro 多平台编译组件
 参考 [Taro 多端组件](https://taro-docs.jd.com/taro/docs/envs#%E5%A4%9A%E7%AB%AF%E7%BB%84%E4%BB%B6)  
-对应的演示 Demo 分别在 [pages index](https://github.com/rzhAvenir/taro-vue3-template/blob/master/src/pages/index/index.vue) 和 [components](https://github.com/rzhAvenir/taro-vue3-template/tree/master/src/components) 下
+对应的演示 Demo 分别在 [pages/index](https://github.com/rzhAvenir/taro-vue3-template/blob/master/src/pages/index/index.vue) 和 [components](https://github.com/rzhAvenir/taro-vue3-template/tree/master/src/components) 下

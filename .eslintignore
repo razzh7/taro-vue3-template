@@ -2,3 +2,8 @@
 .idea
 index.html
 node_modules/
+dist
+global.d.ts
+CHANGELOG.md
+README.md
+!.*

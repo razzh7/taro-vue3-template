@@ -1,3 +1,3 @@
 module.exports = {
-  '*.{vue,js,jsx,ts,tsx,json}': ['pnpm lint']
+  '*.{vue,js,jsx,ts,tsx,json}': 'eslint --fix'
 }

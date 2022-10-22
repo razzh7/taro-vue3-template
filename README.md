@@ -1,3 +1,17 @@
+# 功能
+- [unocss](https://uno.antfu.me/) - 原子化 css 引擎
+- [NutUI 组件库](https://nutui.jd.com/#/zh-CN/guide/intro) - Vue 3 组件库，支持 H5 和 小程序双端编译
+- CHANGELOG - 自动生成 commit 提交记录
+- ESlint + Prettier - 组合管理代码质量和风格
+- Git 提交内容校验 - husky、commitlint、lint-staged
+
+# 插件
+可以在扩展（Extentions） 中搜索 @recommended，就像这样：
+
+![img](/screenshots/extentions.png)
+
+这样就可以看到 `.vscode` 文件中推荐的插件扩展了
+
 # 从零开始搭建 Taro + Vue3 多端编译环境
 
 ## 一、搭建项目架构

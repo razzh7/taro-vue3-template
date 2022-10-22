@@ -6,7 +6,7 @@
 - Git 提交内容校验 - husky、commitlint、lint-staged
 
 # 插件
-可以在扩展（Extentions） 中搜索 @recommended，就像这样：
+可以在扩展（Extentions) 中搜索 @recommended，就像这样：
 
 ![img](/screenshots/extentions.png)
 

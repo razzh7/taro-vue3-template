@@ -1,4 +1,5 @@
 import presetWeapp from 'unocss-preset-weapp'
+import { transformerAttributify, transformerClass } from 'unocss-preset-weapp/transformer'
 
 export default {
   presets: [
@@ -14,5 +15,6 @@ export default {
         375: 2 / 1
       }
     })
-  ]
+  ],
+  transformers: [transformerAttributify(), transformerClass()]
 }

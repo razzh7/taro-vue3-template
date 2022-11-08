@@ -1,12 +1,12 @@
 ## 功能
-- [UnoCss](https://uno.antfu.me/) - 原子化 CSS 引擎
+- [UnoCSS](https://uno.antfu.me/) - 原子化 CSS 引擎
 - [NutUI 组件库](https://nutui.jd.com/#/zh-CN/guide/intro) - Vue 3 组件库，支持 H5 和 小程序双端编译
 - CHANGELOG - 自动生成 commit 提交记录
 - ESlint + Prettier - 组合管理代码质量和风格
 - Git 提交内容校验 - husky、commitlint、lint-staged
 
-## UnoCss 写法
-可以到 [UnoCss 文档](https://uno.antfu.me/) 中查询语法。  
+## UnoCSS 写法
+可以到 [UnoCSS 文档](https://uno.antfu.me/) 中查询语法。  
 推荐使用带 `class` 写法：
 
 ```html

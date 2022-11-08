@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/rzhAvenir/taro-vue3-template/compare/v1.0.0...v1.0.1) (2022-11-08)
+
+
+### Bug Fixes
+
+* 引用文件 type error ([bdb894e](https://github.com/rzhAvenir/taro-vue3-template/commit/bdb894ecd18b670de0312b498dc1cfff57f605ee))
+* unocss build fail in windows ([a7f43d7](https://github.com/rzhAvenir/taro-vue3-template/commit/a7f43d7cb1c1741b910220c65f07768b511136d8))
+
 ## [1.0.0](https://github.com/rzhAvenir/taro-vue3-template/compare/v0.0.12...v1.0.0) (2022-09-23)
 
 ### Features

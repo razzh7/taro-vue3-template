@@ -2,9 +2,9 @@ import { resolve } from 'path'
 import UnoCSS from '@unocss/webpack'
 
 const webpackChain = chain => {
-  if (process.env.TARO_ENV === 'h5') {
-    chain.plugin('analyzer').use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
-  }
+  // if (process.env.TARO_ENV === 'h5') {
+  //   chain.plugin('analyzer').use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+  // }
   chain.plugin('unocss').use(UnoCSS())
 }
 

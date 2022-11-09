@@ -1,4 +1,4 @@
-import path from 'path'
+import { resolve } from 'path'
 import UnoCSS from '@unocss/webpack'
 
 const webpackChain = chain => {
@@ -22,7 +22,7 @@ const config = {
   outputRoot: 'dist',
   plugins: ['@tarojs/plugin-html'],
   sass: {
-    resource: [path.resolve(__dirname, '..', 'src/styles/custom_theme.scss')], // 自定义主题样式
+    resource: [resolve(__dirname, '..', 'src/styles/custom_theme.scss')], // 自定义主题样式
     data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
   },
   defineConstants: {},
@@ -30,8 +30,9 @@ const config = {
     patterns: [],
     options: {}
   },
+  // 路径别名配置：需要在 tsconfig.json 的 paths 也配置一下
   alias: {
-    '@': path.resolve(__dirname, '..', 'src')
+    '@/components': resolve(__dirname, '..', 'src/components')
   },
   framework: 'vue3',
   compiler: 'webpack5',

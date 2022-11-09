@@ -20,9 +20,9 @@
     "resolveJsonModule": true,
     "typeRoots": ["node_modules/@types"],
     "paths": {
-      "@/*": ["src/*"]
+      "@/components/*": ["./src/components/*"]
     }
   },
-  "include": ["./src", "global.d.ts", "shims-vue.d.ts"],
+  "include": ["./src", "./types"],
   "compileOnSave": false
 }

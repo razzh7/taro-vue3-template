@@ -18,7 +18,7 @@
     "build:qq": "taro build --type qq --env production",
     "build:jd": "taro build --type jd --env production",
     "build:quickapp": "taro build --type quickapp --env production",
-    "dev": "npm run build:weapp -- --watch",
+    "dev:weapp": "npm run build:weapp -- --watch",
     "dev:swan": "npm run build:swan -- --watch",
     "dev:alipay": "npm run build:alipay -- --watch",
     "dev:tt": "npm run build:tt -- --watch",

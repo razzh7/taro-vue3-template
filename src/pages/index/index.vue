@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import MyDialog from '@/components/Dialog.vue'
-import MyButton from '@/components/Button.vue'
+import MyDialog from '@/components/Dialog/Dialog.vue'
+import MyButton from '@/components/Button/Button.vue'
 // @ts-ignore
-import PlatFormComponent from '@/components/Platform'
+import PlatFormComponent from '@/components/Platform/Platform'
 </script>
 
 <template>

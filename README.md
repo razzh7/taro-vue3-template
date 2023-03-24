@@ -61,7 +61,7 @@ pnpm dev:weapp
 对应的演示 `demo` 分别在 [pages/index](https://github.com/rzhAvenir/taro-vue3-template/blob/master/src/pages/index/index.vue) 和 [components](https://github.com/rzhAvenir/taro-vue3-template/tree/master/src/components) 下
 
 ## 搭建过程和用法
-文章地址：[从零搭建 Taro 多端编译环境](https://rzhavenir.github.io/blog/front/engineer/taro.html)
+文章地址：[从零搭建 Taro 多端编译环境](https://kanmalu.com/blog/taro/)
 
 ## 插件
 可以在扩展（Extentions) 中搜索 `@recommended`，就像这样：
